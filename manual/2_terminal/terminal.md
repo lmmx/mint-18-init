@@ -1,0 +1,4 @@
+- Change profile preferences:
+  - NB on Mint 18 some profile preferences have been split off to general `Preferences` e.g. terminal menu bar.
+- Change background style etc. e.g. transparency (I use green on black with slight transparency rather than system
+- The PS1/2 environment variables (`user@host`) can be changed via .bashrc, see next step

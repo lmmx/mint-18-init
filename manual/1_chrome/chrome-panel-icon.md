@@ -1,0 +1,10 @@
+- Remove Firefox icon, right click Folder icon and click `Add`
+- Give the following settings:
+  - Name: "Google Chrome"
+  - Command: "/usr/bin/google-chrome-stable %U
+  - Comment: "Access the Internet"
+  - [ ] Launch in terminal?
+- Use the icon: `/usr/share/icons/Mint-X/apps/scalable/google-chrome.svg`
+  - File versioned at: https://github.com/ProgramFiles/linux-mint-assets/blob/master/Mint-X/apps/scalable/google-chrome.svg
+    - Confirmed not available using command: `ls /usr/share/icons/Mint-X/*/scalable/google-chrome.svg`
+    - Best thing to do to move across whole set is place aforementioned git repo in that location
