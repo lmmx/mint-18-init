@@ -13,6 +13,6 @@
   - Add keyboard shortcuts
   - Get your edit on
 
-### sudo apt-get install all the things
+### `sudo apt-get install` all the things
 
 - See: 
