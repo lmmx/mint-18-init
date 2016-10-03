@@ -17,7 +17,7 @@ if [[ ${#CONF_USER_LIST[@]} -eq 1 ]]; then
 		# there's a user group with the same name as the only user
 		CONF_GROUP=$CONF_USER
 	else
-		echo "No group for the user '"$CONF_USER"' - try hardcoding into `0_config/config-folders.sh`.\nExiting process." >&2
+		echo "No group for the user '"$CONF_USER"' - try hardcoding into '0_config/config-folders.sh'.\nExiting process." >&2
 		return 1
 	fi
 else
