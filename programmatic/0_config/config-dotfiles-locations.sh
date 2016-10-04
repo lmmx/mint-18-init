@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# NB note that this code could be generated procedurally for a given repo,
+# given assurance of no namespace collisions through procedural variable generation [and sanity checking therein]
+
 # !!! NB!!! directories MUST be terminated in a forward slash for the variables in this script!
 
 DOTFILES_REMOTE_REPO_NAME="dotfiles"
@@ -12,11 +15,10 @@ DOTFILES_USER_DIR=~/ # The directory to copy over to, i.e to put a [functional] 
 
 cd $DOTFILES_LOCAL_DIR
 
-# TODO: this script is not finished!
-# TODO: this needs to be partitioned into user-defined cf. default [DOTFILES_REMOTE_REPO_NAME]
-# TODO: carefully copy across versioned files to match state of setup on old laptop
+# this needs to be partitioned into user-defined cf. default [DOTFILES_REMOTE_REPO_NAME]
+# Goal here is to carefully copy across versioned files to match state of setup on old laptop
 
-mkdir -p $DOTFILES_USER_DIR$
+mkdir -p $DOTFILES_USER_DIR$(if [[ -z $DOTFILES_LOCAL_REPO_NAME ]]; then echo $DOTFILES_REMOTE_REPO_NAME; else echo $DOTFILES_LOCAL_REPO_NAME; fi)
 
 # Initialise a local copy (the functional, unversioned "user" copy) of the versioned ("local") repo
 # The recursive copy command would copy the .git repo, so instead hidden files are ignored by using
