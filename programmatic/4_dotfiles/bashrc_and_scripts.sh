@@ -13,7 +13,7 @@ USER_LIVE_DIR=~/ # the directory in which you put e.g. a '.bashrc' file to have 
                  # (may vary on e.g. a server, another distro, multi-user cf. system-wide cf. root etc. [?])
 
 BASHRC_BACKUP_FILENAME='.linux_mint_initial_bashrc'
-BASHRC_BACKUP_DIR_NAME='.backup_bashrc' # do not set to blank [without editing later code anyway]
+BASHRC_BACKUP_DIR_NAME='.backup_dotfiles' # do not set to blank [without editing later code anyway]
 
 DOTFILES_REMOTE_REPO_NAME='dotfiles'
 # Be verbose when touching important files
@@ -32,7 +32,8 @@ echo "#---Versioned dotfiles from $DOTFILES_LOCAL_REPO will go to $DOTFILES_USER
 
 # This would ideally be parameterised to make it optional as for .dotfiles
 
-# Thinking behind this difference is vaguely that .bashrc etc. are crucial so cannot be 'live'
+# Thinking behind this difference is vaguely that .bashrc, .tmux.conf, etc. are crucial so cannot be 'live'
+# or rather, not possible [well, not wise anyway] to version entire ~/ user home directory!
 
 # ... perhaps a false distinction but on the other hand .scripts are really just a collection of tools
 #    ... these should be versioned live so long as not confidential (they're not)
@@ -80,6 +81,11 @@ fi
 # Initialise bashrc from the repo into the [in-use]
 # .bashrc-supplementary bashrc/ dir. module scripts
 #--------------------------------------------------
+
+#==========!!!============
+# NB: the tmux script
+# now does this better (?)
+#===========!!!===========
 
 mkdir -p $USER_LIVE_DIR$BASHRC_BACKUP_DIR_NAME
 
