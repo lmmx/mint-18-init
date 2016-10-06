@@ -9,3 +9,6 @@ Format of scripts in this directory
 ```
 
 Default installation directory: `~/opt/` and `~/opt/bin/`
+
+- pygist
+- hub

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # INSTALLS: hub
-# DEPENDS: curl
+# DEPENDS: curl, ruby
 # VIA: https://hub.github.com/standalone
 # DEVNOTES: Installing-the-hub-wrapper-for-git-on-Linux
 
@@ -17,7 +17,7 @@ HUB_PATH=$INSTALLING_DIR$SCRIPT_INSTALLING
 
 echo "Installing $SCRIPT_INSTALLING from $INSTALL_VIA to $INSTALLING_DIR" >&2
 sudo curl "$INSTALL_VIA" -Lo "$HUB_PATH"
-chmod 755 $HUB_PATH
+sudo chmod 755 $HUB_PATH
 
 if [[ $(grep "hub alias" ~/.bashrc > /dev/null; echo $?) -eq 0 ]]; then
 	echo "It looks like hub is already aliased in your .bashrc, you're good to go!" >&2

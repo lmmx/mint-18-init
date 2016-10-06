@@ -57,7 +57,7 @@ cd $DOTFILES_LOCAL_DIR
 # Goal here is to carefully copy across versioned files to match state of setup on old laptop
 
 echo "#---Touching directory $DOTFILES_USER_REPO"'bashrc/' >&2
-mkdir -p $DOTFILES_USER_REPO'bashrc/'
+mkdir -p $DOTFILES_USER_REPO'bashrc/confidential/' # makes an empty sub-directory as well as necessary bashrc dir
 
 # Initialise a local copy (the functional, unversioned "user" copy) of the versioned ("local") repo
 # The recursive copy command would copy the .git repo, so instead hidden files are ignored by using
