@@ -58,6 +58,7 @@ cd $DOTFILES_LOCAL_DIR
 
 echo "#---Touching directory $DOTFILES_USER_REPO"'bashrc/' >&2
 mkdir -p $DOTFILES_USER_REPO'bashrc/confidential/' # makes an empty sub-directory as well as necessary bashrc dir
+touch $DOTFILES_USER_REPO'bashrc/confidential/bashrc_confidential'
 
 # Initialise a local copy (the functional, unversioned "user" copy) of the versioned ("local") repo
 # The recursive copy command would copy the .git repo, so instead hidden files are ignored by using
