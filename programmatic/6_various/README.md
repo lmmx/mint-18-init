@@ -8,7 +8,12 @@ Format of scripts in this directory
 # VIA: https://github.com/mattikus/pygist
 ```
 
-Default installation directory: `~/opt/` and `~/opt/bin/`
-
 - pygist
+  - space: user
+  - installation directory: `~/opt/` and `~/opt/bin/`
 - hub
+  - space: system
+  - installation directory: `/usr/bin`
+- git-helpers
+  - space: gits
+  - installation directory: `/gits/`
