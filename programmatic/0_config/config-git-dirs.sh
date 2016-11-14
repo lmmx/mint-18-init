@@ -36,6 +36,6 @@ fi
 echo "Enter your password to run 'sudo chown -R $CONF_USER:$CONF_GROUP" >&2
 
 for CC_DIR in ${CONF_CREATING_DIRS[@]}; do
-	mkdir -p $CC_DIR # p flag silences error if directory exists
+	sudo mkdir -p $CC_DIR # p flag silences error if directory exists
 	sudo chown -R $CONF_USER:$CONF_GROUP $CC_DIR
 done
