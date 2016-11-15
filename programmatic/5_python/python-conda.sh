@@ -6,5 +6,5 @@ sudo pip3 install ruamel.yaml
 sudo -H pip3 install pycosat
 
 conda create -c https://conda.anaconda.org/rdkit -n rdk python=3.5 rdkit
-# source activate rdk
+source activate rdk
 conda install pandas
