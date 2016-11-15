@@ -10,8 +10,8 @@
 
 ## Optional
 
-  - Add keyboard shortcuts
-  - Get your edit on
+- Add keyboard shortcuts
+- Set parcellite to use primary (selection) and sync clipboards
 
 ### `sudo apt-get install` all the things
 

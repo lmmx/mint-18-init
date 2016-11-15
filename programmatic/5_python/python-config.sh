@@ -9,7 +9,8 @@ pip3 install --upgrade pip
 sudo pip3 install --upgrade autopep8
 
 cd ~/Downloads
-wget -O vim-autopep8 https://github.com/tell-k/vim-autopep8/archive/master.zip
+wget -O vim-autopep8.zip https://github.com/tell-k/vim-autopep8/archive/master.zip
+unzip vim-autopep8.zip
 mkdir -p ~/.vim/bundle ~/.vim/plugin
 mv vim-autopep8-master ~/.vim/bundle/vim-autopep8
 ln -s ~/.vim/bundle/vim-autopep8/ftplugin/python_autopep8.vim ~/.vim/plugin/python_autopep8.vim
